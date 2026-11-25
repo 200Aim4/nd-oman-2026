@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<title>National Day Gathering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff8ef;--red:#8f252d;--stone:#b6ab9f;--green:#577953;--gold:#d4b154;--purple:#68467a;--orange:#cc804d;--teal:#25595e;--blue:#7298be;--mint:#6dc9b3;--ink:#2b2320}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%}
+body{min-height:100svh;background:var(--bg);color:var(--ink);font-family:Cairo,system-ui,sans-serif;text-align:center;overflow-x:hidden;position:relative}
+.rib{position:fixed;left:-10%;right:-10%;height:120px;pointer-events:none;z-index:0}
+.rib.top{top:-40px;background:
+ radial-gradient(60% 40px at 20% 60px,var(--gold) 98%,transparent),radial-gradient(45% 34px at 55% 46px,var(--purple) 98%,transparent),
+ radial-gradient(40% 30px at 85% 58px,var(--teal) 98%,transparent),radial-gradient(35% 26px at 5% 80px,var(--mint) 98%,transparent);opacity:.95}
+.rib.bot{bottom:-44px;background:
+ radial-gradient(55% 40px at 15% 60px,var(--mint) 98%,transparent),radial-gradient(45% 34px at 50% 70px,var(--orange) 98%,transparent),
+ radial-gradient(40% 32px at 90% 56px,var(--blue) 98%,transparent),radial-gradient(30% 24px at 70% 40px,var(--green) 98%,transparent);opacity:.95}
+.bar{position:fixed;left:0;right:0;bottom:0;height:6px;display:flex;z-index:1}.bar i{flex:1}
+.wrap{position:relative;z-index:2;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:70px 20px calc(70px + env(safe-area-inset-bottom))}
+.logo{width:min(230px,58vw);height:auto;filter:drop-shadow(0 8px 18px rgba(43,35,32,.15))}
+h1{margin:0;font-size:clamp(28px,8vw,46px);line-height:1.15;color:var(--red);font-weight:800}
+.sub{margin:0;font-size:clamp(17px,4.6vw,21px);color:var(--green);font-weight:700;line-height:1.5}
+.btn{font:inherit;font-weight:800;font-size:22px;border:0;border-radius:18px;min-height:64px;padding:12px 34px;background:var(--red);color:#fff;cursor:pointer;box-shadow:0 6px 0 #5e161c,0 14px 26px rgba(143,37,45,.35)}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 #5e161c}
+.btn small{display:block;font-size:15px;font-weight:700;opacity:.9}
+@media(prefers-reduced-motion:no-preference){.btn{animation:pulse 1.6s ease-in-out infinite}@keyframes pulse{50%{transform:scale(1.05)}}}
+.card{width:min(520px,100%);background:#fff;border-radius:22px;padding:22px 20px;border:3px solid var(--gold);box-shadow:0 12px 30px rgba(43,35,32,.12)}
+.label{font-size:17px;font-weight:700;color:var(--teal);line-height:1.6}
+.answer{margin-top:10px;font-size:clamp(34px,10vw,54px);font-weight:800;line-height:1.15;color:var(--red)}
+.answer .ar{display:block;color:var(--green);font-size:.8em;margin-top:6px}
+.meme{width:min(440px,92vw);border-radius:20px;border:5px solid var(--orange);box-shadow:0 14px 34px rgba(0,0,0,.25)}
+.laugh{font-size:clamp(30px,9vw,48px);font-weight:800;color:var(--purple);line-height:1.2}
+.video{position:fixed;inset:0;z-index:9;background:#000;display:flex;align-items:center;justify-content:center}
+.video video{width:100%;height:100%;object-fit:contain}
+.none{font-size:26px;font-weight:800;color:var(--teal)}
+@media(prefers-reduced-motion:no-preference){.pop{animation:pop .55s cubic-bezier(.2,1.4,.5,1)}@keyframes pop{from{transform:scale(.6);opacity:0}}}
+</style></head>
+<body><div class="rib top"></div><div class="rib bot"></div>
+<div class="bar"><i style="background:#8f252d"></i><i style="background:#b6ab9f"></i><i style="background:#577953"></i><i style="background:#d4b154"></i><i style="background:#68467a"></i><i style="background:#cc804d"></i><i style="background:#25595e"></i><i style="background:#7298be"></i><i style="background:#6dc9b3"></i></div>
+<main class="wrap"><img class="logo" src="assets/logo.png" alt="National Day Gathering"><div class="none">Nothing here 👀<br><span dir="rtl">لا يوجد شيء هنا</span></div></main></body></html>
